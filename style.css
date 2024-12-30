@@ -144,11 +144,19 @@ body {
   .img-fluid {
     border-radius: 5px;
     cursor: pointer;
-    transition: scale 1.1s;
+    transition: scale 0.5s;
   }
   
   .img-fluid:hover {
     scale: 1.05;
+  }
+  
+  .form-control {
+    background-color: #a5bacf !important;
+    border: var(--bs-border-width) solid #26282b !important;
+  }
+  .btn-primary {
+    background-color: #3d668f !important;
   }
   
   footer {
@@ -157,6 +165,24 @@ body {
     color: white;
     padding: 1.5rem 0;
     width: 100%;
+  }
+  
+  .contact-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  
+  .form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .submit-btn {
+    margin-top: 20px;
   }
   
   @media screen and (max-width: 968px) {
@@ -197,4 +223,4 @@ body {
       max-width: 90%;
       gap: 30px;
     }
-  }
+}
