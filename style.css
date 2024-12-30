@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    background: #3d668f;
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .header-text {
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.12rem;
+  }
+  
+  .container {
+    width: 60%;
+  }
+  
+  .about {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .title-about {
+    text-align: center;
+  }
+  
+  .about-text {
+    display: flex;
+    align-items: center;
+  
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    max-width: 600px;
+  }
+  
+  .portrait {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .portrait:hover {
+    transform: scale(1.05);
+  }
+  
+  .portrait-container {
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 290px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 5px;
+  }
+  
+  .portrait-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .portrait-container:hover .portrait-overlay {
+    opacity: 1;
+  }
+  
+  .overlay-text {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
