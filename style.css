@@ -19,6 +19,11 @@ body {
     background-color: #92b0cd;
   }
   
+  p {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+  }
+  
   .header {
     background: #3d668f;
     color: white;
@@ -144,6 +149,21 @@ body {
   
   .img-fluid:hover {
     scale: 1.05;
+  }
+  
+  footer {
+    text-align: center;
+    background: #26282b;
+    color: white;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 968px) {
+    .about {
+      gap: 20px;
+      flex-direction: column;
+    }
   }
   
   
